@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CodeCraft Academy</title>
+  <link rel="icon" type="image/png" href="assets/7.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --bs-primary: #009688; /* Punchy teal */
+      --bs-secondary: #ff7043; /* Warm orange */
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      position: relative;
+    }
+    .hero {
+      background-color: #e0f2f1;
+    }
+    .section-title {
+      color: var(--bs-primary);
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s;
+    }
+    .navbar-brand img {
+      height: 40px;
+    }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70" tabindex="0">
+
+<!-- Navbar -->
+<nav id="mainNav" class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home"><img src="assets/7.png" alt="Logo"> CodeCraft</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#topics">Topics</a></li>
+        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1 class="display-5 fw-bold">Master Coding, Build Your Future</h1>
+        <p class="lead text-muted">From beginner to pro — learn, practice, and create real-world projects with our hands-on approach.</p>
+        <a href="#topics" class="btn btn-primary btn-lg me-2">Start Learning</a>
+        <a href="#contact" class="btn btn-outline-secondary btn-lg">Get in Touch</a>
+      </div>
+      <div class="col-md-6">
+        <img src="assets/1.jpg" class="img-fluid rounded shadow-lg" alt="Coding">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Topics -->
+<section id="topics" class="py-5">
+  <div class="container">
+    <h2 class="section-title fw-bold text-center mb-5">Hot Topics</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/2.jpg" class="card-img-top" alt="Web Dev">
+          <div class="card-body">
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text">Build responsive, modern websites with HTML, CSS, and JavaScript powered by best practices.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/3.png" class="card-img-top" alt="AI">
+          <div class="card-body">
+            <h5 class="card-title">AI & Machine Learning</h5>
+            <p class="card-text">Dive into AI algorithms and build intelligent solutions that solve real-world problems.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/4.jpg" class="card-img-top" alt="Cybersecurity">
+          <div class="card-body">
+            <h5 class="card-title">Cybersecurity</h5>
+            <p class="card-text">Learn to protect systems and data in the fast-changing world of cyber threats.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section id="reviews" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title fw-bold text-center mb-5">What Students Say</h2>
+    <div id="reviewCarousel" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active text-center">
+          <img src="assets/5.jpg" class="rounded-circle mb-3" width="80" height="80" alt="Review 1">
+          <blockquote class="blockquote">"The projects helped me land my first developer job!"</blockquote>
+          <footer class="blockquote-footer">Ananya Sharma</footer>
+        </div>
+        <div class="carousel-item text-center">
+          <img src="assets/6.jpg" class="rounded-circle mb-3" width="80" height="80" alt="Review 2">
+          <blockquote class="blockquote">"Best coding bootcamp experience ever — highly recommended."</blockquote>
+          <footer class="blockquote-footer">Rahul Mehta</footer>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section id="pricing" class="py-5">
+  <div class="container">
+    <h2 class="section-title fw-bold text-center mb-5">Plans & Pricing</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Basic</h5>
+            <p class="card-text">Perfect for beginners.</p>
+            <h3 class="fw-bold">$49</h3>
+            <a href="#" class="btn btn-outline-primary">Choose</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-primary">
+          <div class="card-body text-center">
+            <h5 class="card-title text-primary">Most Popular</h5>
+            <p class="card-text">Full access to all courses.</p>
+            <h3 class="fw-bold">$99</h3>
+            <a href="#" class="btn btn-primary">Choose</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pro</h5>
+            <p class="card-text">1-on-1 mentorship & projects.</p>
+            <h3 class="fw-bold">$199</h3>
+            <a href="#" class="btn btn-outline-primary">Choose</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title fw-bold text-center mb-5">Get in Touch</h2>
+    <form class="mx-auto" style="max-width:600px;">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="name" placeholder="Your Name">
+        <label for="name">Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        <label for="email">Email</label>
+      </div>
+      <div class="form-floating mb-3">
+        <textarea class="form-control" placeholder="Leave a message" id="message" style="height: 150px"></textarea>
+        <label for="message">Message</label>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg">Send</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 bg-dark text-light text-center">
+  <div class="container">
+    <img src="assets/7.png" alt="Logo" class="mb-2" width="40">
+    <p class="mb-2">Follow us on</p>
+    <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+    <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+    <a href="#" class="text-light"><i class="bi bi-github"></i></a>
+    <p class="mt-3 mb-0">&copy; 2025 CodeCraft Academy. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
