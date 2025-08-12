@@ -39,6 +39,7 @@ CodeCraft-Academy/
 │   ├── 5.jpg              # Testimonial 1
 │   ├── 6.jpg              # Testimonial 2
 │   └── 7.png              # Logo & favicon
+|   └── preview.jpg        # Preview
 │
 ├── index.html             # Main HTML file
 └── README.md              # Project documentation
