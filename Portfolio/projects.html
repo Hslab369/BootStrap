@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects • Harshal</title>
+  <link rel="icon" type="image/png" href="assets/7.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>#backToTop{position:fixed;right:1rem;bottom:1rem;display:none;z-index:1040}</style>
+</head>
+<body>
+<!-- Grid, Modals, Carousel, Pagination -->
+<nav class="navbar navbar-expand-lg bg-body border-bottom sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-braces-asterisk me-1"></i> Harshal</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="bg-body-tertiary py-3 border-bottom">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Projects</li>
+      </ol>
+    </nav>
+  </div>
+</header>
+
+<main class="py-5">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center gap-2 mb-4">
+      <h2 class="mb-0">Projects</h2>
+      <span class="badge text-bg-secondary">Practice + Showcase</span>
+      <div class="ms-auto">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a class="nav-link active" href="#all">All</a></li>
+          <li class="nav-item"><a class="nav-link" href="#web">Web</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ai">AI/ML</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sec">Security</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Cards Grid -->
+    <div id="all" class="row g-4">
+      <div class="col-md-4" id="p1">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/2.jpg" class="card-img-top" alt="p1">
+          <div class="card-body">
+            <span class="badge text-bg-success mb-2">Web</span>
+            <h5 class="card-title">CodeCraft Landing</h5>
+            <p class="card-text">Landing page with navbar, hero, cards, accordion, modal, and toast.</p>
+            <div class="d-flex gap-2">
+              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalP1">Preview</button>
+              <a class="btn btn-outline-secondary btn-sm" href="#" data-bs-toggle="tooltip" title="GitHub link">Repo</a>
+            </div>
+          </div>
+          <div class="card-footer small text-secondary">Bootstrap • Responsive</div>
+        </div>
+      </div>
+
+      <div class="col-md-4" id="p2">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/3.png" class="card-img-top" alt="p2">
+          <div class="card-body">
+            <span class="badge text-bg-info mb-2">AI</span>
+            <h5 class="card-title">Tiny ML Notebook</h5>
+            <p class="card-text">UI scaffolding with tabs, badges, alerts, and charts placeholders.</p>
+            <div class="d-flex gap-2">
+              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalP2">Preview</button>
+              <a class="btn btn-outline-secondary btn-sm" href="#" data-bs-toggle="tooltip" title="GitHub link">Repo</a>
+            </div>
+          </div>
+          <div class="card-footer small text-secondary">Bootstrap • Utilities</div>
+        </div>
+      </div>
+
+      <div class="col-md-4" id="p3">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/4.jpg" class="card-img-top" alt="p3">
+          <div class="card-body">
+            <span class="badge text-bg-warning mb-2">Security</span>
+            <h5 class="card-title">Security Snippets</h5>
+            <p class="card-text">Alerts, badges, toasts, and modals to simulate UX flows.</p>
+            <div class="d-flex gap-2">
+              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalP3">Preview</button>
+              <a class="btn btn-outline-secondary btn-sm" href="#" data-bs-toggle="tooltip" title="GitHub link">Repo</a>
+            </div>
+          </div>
+          <div class="card-footer small text-secondary">Bootstrap • Messaging</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <nav class="mt-4" aria-label="Project pages">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled"><span class="page-link">Prev</span></li>
+        <li class="page-item active"><span class="page-link">1</span></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+  </div>
+</main>
+
+<footer class="py-4 bg-dark text-light text-center small">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 Harshal • Projects</p>
+  </div>
+</footer>
+
+<button id="backToTop" class="btn btn-primary rounded-circle p-2" aria-label="Back to top">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<!-- Project Modals with Carousel -->
+<div class="modal fade" id="modalP1" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content">
+  <div class="modal-header"><h5 class="modal-title">CodeCraft Landing</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body">
+    <div id="carP1" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner rounded">
+        <div class="carousel-item active"><img src="assets/2.jpg" class="d-block w-100" alt=""></div>
+        <div class="carousel-item"><img src="assets/1.jpg" class="d-block w-100" alt=""></div>
+        <div class="carousel-item"><img src="assets/5.jpg" class="d-block w-100" alt=""></div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carP1" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carP1" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <ul class="list-group list-group-flush mt-3">
+      <li class="list-group-item">Components: Navbar, Cards, Accordion, Modal, Toast</li>
+      <li class="list-group-item">Focus: Clean layout, utility-first spacing</li>
+    </ul>
+  </div>
+</div></div></div>
+
+<div class="modal fade" id="modalP2" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content">
+  <div class="modal-header"><h5 class="modal-title">Tiny ML Notebook</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body">
+    <div id="carP2" class="carousel slide">
+      <div class="carousel-inner rounded">
+        <div class="carousel-item active"><img src="assets/3.png" class="d-block w-100" alt=""></div>
+        <div class="carousel-item"><img src="assets/6.jpg" class="d-block w-100" alt=""></div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carP2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carP2" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <div class="alert alert-info mt-3 mb-0"><i class="bi bi-info-circle me-1"></i> Demo UI scaffolding for ML apps.</div>
+  </div>
+</div></div></div>
+
+<div class="modal fade" id="modalP3" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content">
+  <div class="modal-header"><h5 class="modal-title">Security Snippets</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body">
+    <div id="carP3" class="carousel slide">
+      <div class="carousel-inner rounded">
+        <div class="carousel-item active"><img src="assets/4.jpg" class="d-block w-100" alt=""></div>
+        <div class="carousel-item"><img src="assets/5.jpg" class="d-block w-100" alt=""></div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carP3" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carP3" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <div class="alert alert-warning mt-3 mb-0"><i class="bi bi-shield-lock me-1"></i> UX messaging patterns explored.</div>
+  </div>
+</div></div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el=>new bootstrap.Tooltip(el));
+  const btt=document.getElementById('backToTop');
+  window.addEventListener('scroll',()=>{btt.style.display=window.scrollY>300?'block':'none';});
+  btt.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+</script>
+</body>
+</html>
